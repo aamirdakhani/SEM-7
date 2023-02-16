@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Student Detail Form"
-        android:gravity="center"
         android:layout_margin="30dp"
-        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Student Detail Form"
         android:textColor="#4e3a23"
+        android:textSize="30dp"
         android:typeface="sans" />
 
     <TableLayout
@@ -30,8 +30,8 @@
                 android:id="@+id/nameHolder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="25dp"
                 android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="25dp"
                 android:text="Name : "
                 android:textSize="25dp" />
 
@@ -43,8 +43,8 @@
                 android:layout_marginRight="20dp"
                 android:ems="10"
                 android:hint="Enter your name"
-                android:textSize="25dp"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textSize="25dp" />
 
         </TableRow>
 
@@ -56,8 +56,8 @@
                 android:id="@+id/usnHolder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="25dp"
                 android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="25dp"
                 android:text="USN : "
                 android:textSize="25dp" />
 
@@ -69,8 +69,8 @@
                 android:layout_marginRight="20dp"
                 android:ems="10"
                 android:hint="Enter your USN"
-                android:textSize="25dp"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textSize="25dp" />
 
         </TableRow>
 
@@ -82,8 +82,8 @@
                 android:id="@+id/deptholder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="25dp"
                 android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="25dp"
                 android:text="Dept : "
                 android:textSize="25dp" />
 
@@ -92,21 +92,20 @@
                 android:id="@+id/dept"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:spinnerMode="dropdown"
-                android:layout_marginVertical="25dp"
                 android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="25dp"
+                android:spinnerMode="dropdown"
                 android:textSize="25dp" />
         </TableRow>
 
         <Button
+            android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SUBMIT"
-            android:textStyle="bold"
             android:layout_margin="20dp"
-            android:id="@+id/submit"
             android:onClick="onSubmit"
-            />
+            android:text="SUBMIT"
+            android:textStyle="bold" />
 
     </TableLayout>
 

@@ -1,14 +1,11 @@
-package com.exampl
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.tw1;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import java.util.*;
-import java.sql.Array;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     float font = 30;
@@ -29,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
     public void colorChange(View view) {
         TextView helloTxt = findViewById(R.id.helloTxt);
 
-        int red[] = new int[] { 221, 66, 117, 230, 2, 210 };
-        int green[] = new int[] { 66, 245, 232, 11, 26, 120 };
-        int blue[] = new int[] { 245, 212, 9, 11, 41, 240 };
+        int[] red = new int[]{221, 66, 117, 230, 2, 210};
+        int[] green = new int[]{66, 245, 232, 11, 26, 120};
+        int[] blue = new int[]{245, 212, 9, 11, 41, 240};
         helloTxt.setTextColor(Color.rgb(red[r], green[g], blue[b]));
         r++;
         b++;

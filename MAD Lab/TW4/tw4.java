@@ -1,7 +1,5 @@
 package com.example.tw4;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.database.Cursor;
@@ -10,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText Rollno, Name, Marks;
@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Rollno = (EditText) findViewById(R.id.roll);
-        Name = (EditText) findViewById(R.id.name);
-        Marks = (EditText) findViewById(R.id.marks);
-        Insert = (Button) findViewById(R.id.insert);
-        Delete = (Button) findViewById(R.id.delete);
-        Update = (Button) findViewById(R.id.update);
-        View = (Button) findViewById(R.id.view);
-        ViewAll = (Button) findViewById(R.id.all);
+        Rollno = findViewById(R.id.roll);
+        Name = findViewById(R.id.name);
+        Marks = findViewById(R.id.marks);
+        Insert = findViewById(R.id.insert);
+        Delete = findViewById(R.id.delete);
+        Update = findViewById(R.id.update);
+        View = findViewById(R.id.view);
+        ViewAll = findViewById(R.id.all);
 
         Insert.setOnClickListener(this);
         Delete.setOnClickListener(this);

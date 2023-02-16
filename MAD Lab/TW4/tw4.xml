@@ -1,100 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Student Details"
-        android:textSize="35dp"
         android:gravity="center"
-        />
+        android:text="Student Details"
+        android:textSize="35dp" />
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/rollView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enter Roll No : "
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/roll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Roll Number"
             android:inputType="textPersonName"
-            android:textSize="20dp"
-            android:hint="Roll Number" />
+            android:textSize="20dp" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/nameView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enter Name   : "
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Name"
             android:inputType="textPersonName"
-            android:textSize="20dp"
-            android:hint="Name" />
+            android:textSize="20dp" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/marksView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enter Marks   : "
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/marks"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Marks"
             android:inputType="textPersonName"
-            android:textSize="20dp"
-            android:hint="Marks" />
+            android:textSize="20dp" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <Button
             android:id="@+id/insert"
@@ -116,8 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <Button
             android:id="@+id/update"

@@ -1,10 +1,10 @@
 package com.example.tw2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity {
     String name, usn, dept;
@@ -13,9 +13,9 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        TextView t1 = (TextView) findViewById(R.id.newName);
-        TextView t2 = (TextView) findViewById(R.id.newUsn);
-        TextView t3 = (TextView) findViewById(R.id.newDept);
+        TextView t1 = findViewById(R.id.newName);
+        TextView t2 = findViewById(R.id.newUsn);
+        TextView t3 = findViewById(R.id.newDept);
 
         Intent i = getIntent();
 
